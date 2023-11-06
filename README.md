@@ -2,7 +2,7 @@
 ## About
 <p align='justify'>Predicting air quality plays a crucial role in safeguarding public health by proactively mitigating exposure to hazardous levels of pollution. The importance of this role becomes even more pronounced for individuals who suffer from respiratory conditions, as they are particularly vulnerable to the risks of unfavorable air quality conditions.</p>
 
-<p align='justify'>According to the US Air Quality Index (AQI) the ranges of concern according to the concentration (in ug/m^3) of ozone and particle pollution is as follows:</p>
+<p align='justify'>According to the <a href=https://www.airnow.gov/aqi/aqi-basics/>US Environmental Protection Agency (EPA)</a> the Air Quality Index (AQI) is divided into 6 categories according to a different level of health concern. These categories of AQI (in ug/m^3) of ozone and particle pollution are as follows:</p>
 
 <p align='justify'>We are going to perform multivariate time series forecasting employing deep learning on <a href=https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data>Beijing US Ambassy Air Quality dataset</a> which consists of 43824 samples of hourly data of different weather conditions and pollution (pm2.5) level collected between January 1st of2010 and December 31st of 2014 on the US ambassy of Beijing. The dataset has the following three variables: </p>
 <ul>
