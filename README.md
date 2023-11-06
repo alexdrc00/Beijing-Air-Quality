@@ -36,3 +36,24 @@ The steps will be:
 <li>Model evaluation
 </ol>
 </p>
+
+## Loading & Cleaning the data
+<p align='justify'>It seems clear at first look that our dataset needs some cleaning. To begin with, the variables names are a bit confusing the way they are defined right now so we should rename them. Date variables need to be parsed and set as index and variable 'No' serves no real purpose so we will drop it.</p>
+
+<p align='justify'>We confirm there are missing values in the pm2.5 variable as can be seen in the graph below, exactly 2067, we decide to fill these missing values with zeros and let the model interpret them as missing. There are only two null values in the series which are most likely outliers so it will not significantly affect our model to have them set as missing values.</p></br>
+
+<p align="center">
+  <img src="imgs/first-1k.png" alt="[first-1k]">
+</p></br>
+
+<p align='justify'>Once the date has been parsed and set as index, the columns 'No', 'Year', 'Month', 'Day' and 'Hour' dropped, clearer columns names have been set, missing values set as zero and the first day of data dropped, since it was missing pm2.5 values and we need the initial values start the training of our model, we can move forward to exploring the data</p></br>
+
+## Exploring the data
+<p align='justify'>First of all, we are going to define, using libraries like emoji and re, a few functions to clean our dataset such as:
+<ul>
+<li>strip_all_entities: remove punctuations, links, mentions and \r\n new line characters
+<li>clean_hastags: clean hashtags at the end of the sentence, and keep those in the middle of the sentence by removing just the # symbol
+<li>filter_char: filter special characters such as & and $ present in some words
+<li>remove_mult_spaces: remove multiple spaces
+</ul>
+</p>
