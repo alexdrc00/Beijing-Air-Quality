@@ -30,7 +30,7 @@
 The steps will be:
 <ol>
 <li>Loading and Cleaning Data
-<li>Exploring Data (Clean tweets)
+<li>Exploring Data
 <li>Data Preprocessing
 <li>Model development
 <li>Model evaluation
